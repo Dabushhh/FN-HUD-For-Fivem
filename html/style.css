@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: transparent;
+    overflow: hidden;
+}
+
+.hud {
+    position: fixed;
+    bottom: 3%;
+    left: 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 350px;
+}
+
+.bar {
+    position: relative;
+    height: 20px;
+    background: #444;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+}
+
+.bar .label {
+    position: absolute;
+    left: 5px;
+    color: white;
+    font-size: 14px;
+    z-index: 2;
+    font-family: 'Bebas Neue', monospace; 
+}
+
+.bar .progress {
+    height: 100%;
+    background: linear-gradient(90deg, #00ff00, #007700);
+    width: 100%; 
+    z-index: 1;
+}
+
+.bar.armor .progress {
+    background: linear-gradient(90deg, #0000ff, #0044aa);
+}
