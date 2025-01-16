@@ -1,4 +1,4 @@
-# FN-HUD-For-Fivem
+# FN HUD For Fivem
 ## Basic FN HUD Free & Open :D
 
 Enjoy!
